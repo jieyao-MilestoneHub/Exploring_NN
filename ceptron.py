@@ -22,13 +22,14 @@ class Perceptron:
                 self.weights += self.learning_rate * error * inputs
                 self.bias += self.learning_rate * error
 
-# Activation functions for AND and OR gates
+# Activation functions for AND and OR gates for binary classification
 def and_gate_activation(x):
     return 1 if x >= 0 else 0
 
 def or_gate_activation(x):
     return 0 if x < 0.5 else 1
 
+# Standard activation function
 def sigmoid_function(x):
     return 1 / (1 + np.exp(-x))
 

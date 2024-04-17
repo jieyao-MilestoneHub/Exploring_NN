@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+LOSS_HISTORY_PATH = "visual_result/multi-ceptron-loss.png"
 class NeuralNetwork:
     def __init__(self, input_size, hidden_size, output_size):
         self.input_size = input_size
@@ -58,8 +59,18 @@ class NeuralNetwork:
                 print(f"Epoch {epoch}: Loss = {loss}")
         return loss_history
 
+def test_nn(nn, inputs):
+    print(f"Testing {nn.__class__.__name__}:")
+    for i in range(len(inputs)):
+        prediction = nn.forward(inputs[i])
+        # 為你的預測值訂一個閾值，以做分類
+        # threshold = 0.5
+        # classes = 0 if prediction < threshold else 1
+        # print(f"Input: {inputs[i]}, Target: {targets[i]}, Prediction: {classes}")
+        print(f"Input: {inputs[i]}, Target: {targets[i]}, Prediction: {prediction}")
 
 if __name__ == "__main__":
+
     # ---------- 測試模型(分類) ---------- #
     inputs = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
     targets = np.array([[0], [1], [1], [0]])
@@ -70,15 +81,12 @@ if __name__ == "__main__":
     # 訓練神經網絡
     loss_history = nn.train(inputs, targets, epochs=10000, learning_rate=0.1)
 
-
-    print("\nTest Results:")
-    for i in range(len(inputs)):
-        prediction = nn.forward(inputs[i])
-        print(f"Input: {inputs[i]}, Target: {targets[i]}, Prediction: {prediction}")
+    # 測試神經網絡
+    test_nn(nn, inputs)
 
     # 可視化損失的變化
-    plt.plot(loss_history)
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.title('Training Loss')
-    plt.savefig("visual_result/multi-ceptron-loss.png")
+    # plt.plot(loss_history)
+    # plt.xlabel('Epoch')
+    # plt.ylabel('Loss')
+    # plt.title('Training Loss')
+    # plt.savefig(LOSS_HISTORY_PATH)
