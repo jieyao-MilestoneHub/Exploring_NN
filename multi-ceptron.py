@@ -8,15 +8,15 @@ class NeuralNetwork:
         self.hidden_size = hidden_size
         self.output_size = output_size
         
-        # 隨機初始化權重
+        # random initialize weights
         self.weights_input_hidden = np.random.rand(input_size, hidden_size)
         self.weights_hidden_output = np.random.rand(hidden_size, output_size)
         
-        # 初始化偏差
+        # initialize bias
         self.bias_hidden = np.zeros((1, hidden_size))
         self.bias_output = np.zeros((1, output_size))
         
-        # 定義激活函數（sigmoid）
+        # define activation function（sigmoid）
         self.sigmoid = lambda x: 1 / (1 + np.exp(-x))
         self.sigmoid_derivative = lambda x: x * (1 - x)
     

@@ -2,7 +2,6 @@ import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 from matplotlib import pyplot as plt
 from datetime import datetime
-import os
 
 class CNNModels:
     def __init__(self, model_name="LeNet"):
