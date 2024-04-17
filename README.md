@@ -1,5 +1,7 @@
 # A Journey Through Neural Networks: From Perception to Creation
 
+This repository leverages TensorFlow with a minimalist architecture to guide us through the fascinating evolution of neural networks.
+
 ## First Stop: The Dawn of the Perceptron
 Picture yourself standing before a vast, blank canvas, equipped with nothing more than a simple pen. In 1957, Frank Rosenblatt breathed life into this pen, creating the Perceptron. This tool, akin to a child's first crayon, could only draw basic lines—distinguishing straight from curved ones but not yet capable of crafting more complex images. It was the nascent step in teaching machines to 'see' and understand, setting the foundation for more intricate systems.
 
