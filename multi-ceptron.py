@@ -21,7 +21,6 @@ class NeuralNetwork:
         self.sigmoid_derivative = lambda x: x * (1 - x)
     
     def forward(self, inputs):
-        # 前向傳播
         self.hidden_sum = np.dot(inputs, self.weights_input_hidden) + self.bias_hidden
         self.hidden_activation = self.sigmoid(self.hidden_sum)
         
@@ -31,23 +30,19 @@ class NeuralNetwork:
         return self.output_activation
     
     def backward(self, inputs, targets, learning_rate):
-        # 反向傳播
         output_error = targets - self.output_activation
         output_delta = output_error * self.sigmoid_derivative(self.output_activation)
         
         hidden_error = np.dot(output_delta, self.weights_hidden_output.T)
         hidden_delta = hidden_error * self.sigmoid_derivative(self.hidden_activation)
         
-        # 更新權重
         self.weights_hidden_output += learning_rate * np.dot(self.hidden_activation.T, output_delta)
         self.weights_input_hidden += learning_rate * np.dot(inputs.T, hidden_delta)
         
-        # 更新偏差
         self.bias_output += learning_rate * np.sum(output_delta, axis=0)
         self.bias_hidden += learning_rate * np.sum(hidden_delta, axis=0)
     
     def train(self, inputs, targets, epochs, learning_rate):
-        # 訓練模型
         loss_history = []
         for epoch in range(epochs):
             self.forward(inputs)
@@ -63,7 +58,7 @@ def test_nn(nn, inputs):
     print(f"Testing {nn.__class__.__name__}:")
     for i in range(len(inputs)):
         prediction = nn.forward(inputs[i])
-        # 為你的預測值訂一個閾值，以做分類
+        # set a threshold to classify the output
         # threshold = 0.5
         # classes = 0 if prediction < threshold else 1
         # print(f"Input: {inputs[i]}, Target: {targets[i]}, Prediction: {classes}")
@@ -71,20 +66,20 @@ def test_nn(nn, inputs):
 
 if __name__ == "__main__":
 
-    # ---------- 測試模型(分類) ---------- #
+    # ---------- test model (classification) ---------- #
     inputs = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
     targets = np.array([[0], [1], [1], [0]])
 
-    # 初始化神經網絡
+    # initial neural network
     nn = NeuralNetwork(input_size=2, hidden_size=4, output_size=1)
 
-    # 訓練神經網絡
+    # train the neural network
     loss_history = nn.train(inputs, targets, epochs=10000, learning_rate=0.1)
 
-    # 測試神經網絡
+    # test the neural network
     test_nn(nn, inputs)
 
-    # 可視化損失的變化
+    # visual the loss history
     # plt.plot(loss_history)
     # plt.xlabel('Epoch')
     # plt.ylabel('Loss')

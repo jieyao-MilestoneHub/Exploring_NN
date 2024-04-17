@@ -7,12 +7,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 '''
-概念：
-VAE 由兩部分組成：編碼器(Encoder)和解碼器(Decoder)。
-編碼器負責將輸入資料壓縮成一個潛在空間的表示，而解碼器則負責從這個潛在表示中重建原始資料。
-VAE 透過最小化重建誤差和潛在表示的分佈與預定義分佈（如高斯分佈）之間的差異來進行訓練。
+concept:
+VAE consists of two parts: Encoder and Decoder.
+The encoder is responsible for compressing the input data into a latent space representation, while the decoder is responsible for reconstructing the original data from this latent representation.
+VAEs are trained by minimizing the reconstruction error and the difference between the distribution of the underlying representation and a predefined distribution (such as a Gaussian distribution).
 '''
 
+tf.random.set_seed(42)
 class Sampling(layers.Layer):
     """Uses (z_mean, z_log_var) to sample z, the vector encoding a digit."""
     def call(self, inputs):
