@@ -1,16 +1,21 @@
-# 探索神經網路的變革
+# A Journey Through Neural Networks: From Perception to Creation
 
-旨在以盡量簡單的架構實現神經網路各階段的想法。
+## First Stop: The Dawn of the Perceptron
+Picture yourself standing before a vast, blank canvas, equipped with nothing more than a simple pen. In 1957, Frank Rosenblatt breathed life into this pen, creating the Perceptron. This tool, akin to a child's first crayon, could only draw basic lines—distinguishing straight from curved ones but not yet capable of crafting more complex images. It was the nascent step in teaching machines to 'see' and understand, setting the foundation for more intricate systems.
 
-## 第一站：感知器的黎明——機器的第一步
-想象一下，你在一個巨大的空白畫布前，只有一支筆。Frank Rosenblatt在1957年給了這支筆生命，創造了感知器。它就像一個小孩學會了用筆畫出線條，能分辨直線和曲線，但還不能完整地畫出複雜的圖畫。
-## 第二站：多層前饋網絡和反向傳播——構建複雜圖景
-隨著時間進入1980年代，科學家們像是添了多支筆和顏色與更改畫布的工具。每當畫作不對勁時，畫家（網絡）會退後一步，調整筆觸和色彩（權重和偏差），以更精確地呈現想像中的畫面。換句話說，多層感知器和反向傳播算法的出現，讓神經網絡不僅能做簡單的分類，甚至可以模擬更多函數。
-## 第三站：卷積神經網絡和LeNet的視覺革命
-來到1989年，Yann LeCun像是發明了一種新的畫筆，特別適用於畫出複雜的人像和細節豐富的背景。卷積神經網絡（CNN）就此開始萌芽，LeNet的文章中以手寫資料集當成實作的起點。
-## 第四站：深度學習與AlexNet的突破——描繪全新維度
-進入2010年代，像是整個畫室都升級了，增加了畫布大小，與畫筆的客製化。AlexNet不僅繼承了前人的筆法，還加入了強大的工具（GPU加速），使畫作的細節和色彩更加豐富，能在更大的畫布上作畫。這個模型在大規模視覺辨識挑戰賽中大放異彩，這場比賽包含2萬多個類別，徹底改變了原本簡單的神經網路架構。
-## 第五站：生成式對抗網絡和變分自編碼器——藝術家的夢想工具
-到了2010年代中後期，科學家們獲得了夢幻般的新工具：GANs和VAEs。同樣以繪畫為例，這就好比他們可以創造出從未見過的顏色和形狀，甚至夢境般的景象。此模型推動了擁有創造力的神經網路。
-## 第六站：自注意力與變換器模型——創造畫友
-最後，到了2017年，Transformer模型的出現就像是創造出一個畫家，你只需要告訴畫家要用哪些工具畫出什麼樣的風格，這時候就像多了一個畫友。這個模型打開了生成式AI的大門。
+## Second Stop: Multi-layer Feedforward Networks and Backpropagation
+As the timeline shifted to the 1980s, imagine artists being gifted with multiple pens, each capable of adding depth and texture to their sketches. These tools allowed for corrections: if a sketch didn't quite capture the envisioned image, the artist—much like a neural network—would step back, reassess, and adjust their strokes. This phase marked the introduction of multi-layer perceptrons and the backpropagation algorithm, enabling networks to handle not just simple classifications but to simulate complex functions and representations.
+
+## Third Stop: Convolutional Neural Networks and LeNet’s Visual Revolution
+In 1989, Yann LeCun introduced a revolutionary tool—a brush designed specifically for painting detailed portraits and intricate backgrounds. This era ushered in Convolutional Neural Networks (CNNs), with LeNet pioneering their use on handwritten datasets. This new 'brush' allowed for a significant leap in handling visual data, paving the way for more sophisticated image recognition applications.
+
+## Fourth Stop: Breakthroughs in Deep Learning with AlexNet
+Enter the 2010s, where the artist's studio underwent a major upgrade: larger canvases and more advanced brushes, now powered by GPU acceleration. AlexNet, building on its predecessors' techniques, brought a new dimension to neural network capabilities, handling over 20,000 image categories in a significant visual recognition challenge. This not only showcased the depth and richness possible in neural representations but also transformed the architecture of neural networks significantly.
+
+## Fifth Stop: Generative Adversarial Networks and Variational Autoencoders
+By the mid-to-late 2010s, artists had at their disposal what could only be described as dream tools. Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) enabled the creation of unprecedented colors and shapes, crafting scenes straight out of a dream. These innovations pushed the boundaries of creativity in neural networks, allowing them to generate new ideas and images autonomously.
+
+## Sixth Stop: Self-Attention and the Transformer Model
+In 2017, the introduction of the Transformer model was akin to gaining a new friend who could paint alongside you. You need only describe what style and tools to use, and this 'friend'—the Transformer—would bring your ideas to life. This model marked a significant milestone in generative AI, expanding the ways in which machines understand and generate human-like content.
+
+This journey through the evolution of neural networks mirrors the progression of an artist from simple line drawings to complex, creative compositions, highlighting how each development has built upon the last to expand the horizons of what machines can perceive and create.
