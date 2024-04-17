@@ -1,16 +1,16 @@
-# 探索神經網路的變革
+# Exploring the transformation of neural networks
 
-旨在以盡量簡單的架構實現神經網路各階段的想法。
+It aims to implement the ideas of each stage of the neural network with the simplest possible architecture.
 
-## 第一站：感知器的黎明——機器的第一步
-想象一下，你在一個巨大的空白畫布前，只有一支筆。Frank Rosenblatt在1957年給了這支筆生命，創造了感知器。它就像一個小孩學會了用筆畫出線條，能分辨直線和曲線，但還不能完整地畫出複雜的圖畫。
-## 第二站：多層前饋網絡和反向傳播——構建複雜圖景
-隨著時間進入1980年代，科學家們像是添了多支筆和顏色與更改畫布的工具。每當畫作不對勁時，畫家（網絡）會退後一步，調整筆觸和色彩（權重和偏差），以更精確地呈現想像中的畫面。換句話說，多層感知器和反向傳播算法的出現，讓神經網絡不僅能做簡單的分類，甚至可以模擬更多函數。
-## 第三站：卷積神經網絡和LeNet的視覺革命
-來到1989年，Yann LeCun像是發明了一種新的畫筆，特別適用於畫出複雜的人像和細節豐富的背景。卷積神經網絡（CNN）就此開始萌芽，LeNet的文章中以手寫資料集當成實作的起點。
-## 第四站：深度學習與AlexNet的突破——描繪全新維度
-進入2010年代，像是整個畫室都升級了，增加了畫布大小，與畫筆的客製化。AlexNet不僅繼承了前人的筆法，還加入了強大的工具（GPU加速），使畫作的細節和色彩更加豐富，能在更大的畫布上作畫。這個模型在大規模視覺辨識挑戰賽中大放異彩，這場比賽包含2萬多個類別，徹底改變了原本簡單的神經網路架構。
-## 第五站：生成式對抗網絡和變分自編碼器——藝術家的夢想工具
-到了2010年代中後期，科學家們獲得了夢幻般的新工具：GANs和VAEs。同樣以繪畫為例，這就好比他們可以創造出從未見過的顏色和形狀，甚至夢境般的景象。此模型推動了擁有創造力的神經網路。
-## 第六站：自注意力與變換器模型——創造畫友
-最後，到了2017年，Transformer模型的出現就像是創造出一個畫家，你只需要告訴畫家要用哪些工具畫出什麼樣的風格，這時候就像多了一個畫友。這個模型打開了生成式AI的大門。
+## First stop: The dawn of the perceptron - the first step of the machine
+Imagine you are in front of a huge blank canvas with only a pen. Frank Rosenblatt gave the pen life in 1957, creating the Perceptron. It is like a child who has learned to draw lines with a pen and can distinguish between straight lines and curves, but cannot yet fully draw complex pictures.
+## Second stop: Multi-layer feedforward network and backpropagation - building complex pictures
+As the years progressed into the 1980s, scientists seemed to add multiple pens and tools for color and canvas changes. Whenever something doesn't look right in a painting, the painter (the network) takes a step back and adjusts the brushstrokes and colors (weights and biases) to more accurately represent the imagined picture. In other words, the emergence of multi-layer perceptrons and backpropagation algorithms allow neural networks to not only do simple classification, but can even simulate more functions.
+## Third Stop: Convolutional Neural Networks and LeNet’s Visual Revolution
+Come 1989, Yann LeCun seems to have invented a new brush, especially suitable for painting complex portraits and richly detailed backgrounds. Convolutional neural networks (CNN) began to sprout at this time, and LeNet's article used handwritten data sets as the starting point for implementation.
+## Fourth stop: Breakthroughs in deep learning and AlexNet - describing a new dimension
+In the 2010s, it seemed like the entire studio had been upgraded, with increased canvas sizes and customization of brushes. AlexNet not only inherits the brushwork of its predecessors, but also adds powerful tools (GPU acceleration) to make the details and colors of the paintings richer, and it can be painted on a larger canvas. This model shined in the large-scale visual recognition challenge, which included more than 20,000 categories, completely changing the original simple neural network architecture.
+## Stop 5: Generative Adversarial Networks and Variational Autoencoders – Artists’ Dream Tools
+By the mid-to-late 2010s, scientists had access to fantastic new tools: GANs and VAEs. Taking painting as an example again, it's like they can create colors and shapes they've never seen before, or even dream-like scenes. This model drives neural networks that possess creativity.
+## Stop Six: Self-Attention and Transformer Model - Creating Painting Friends
+Finally, in 2017, the emergence of the Transformer model is like creating a painter. You only need to tell the painter which tools to use to draw what style. At this time, it is like having an extra painting friend. This model opens the door to generative AI.
